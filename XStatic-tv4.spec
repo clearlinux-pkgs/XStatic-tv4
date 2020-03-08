@@ -4,7 +4,7 @@
 #
 Name     : XStatic-tv4
 Version  : 1.2.7.0
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/2b/26/b07115af27b339c861b8c9a775a621524b421c898e26e015880dfb888c49/XStatic-tv4-1.2.7.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2b/26/b07115af27b339c861b8c9a775a621524b421c898e26e015880dfb888c49/XStatic-tv4-1.2.7.0.tar.gz
 Summary  : tv4 1.2.7 (XStatic packaging standard)
@@ -15,18 +15,17 @@ Requires: XStatic-tv4-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 
 %description
-XStatic-Angular
 ---------------
-
-Angular JavaScript library packaged for setuptools (easy_install) / pip.
-
-This package is intended to be used by **any** project that needs these files.
-
-It intentionally does **not** provide any extra code except some metadata
-**nor** has any extra requirements. You MAY use some minimal support code from
-the XStatic base package, if you like.
-
-You can find more info about the xstatic packaging way in the package `XStatic`.
+        
+        Angular JavaScript library packaged for setuptools (easy_install) / pip.
+        
+        This package is intended to be used by **any** project that needs these files.
+        
+        It intentionally does **not** provide any extra code except some metadata
+        **nor** has any extra requirements. You MAY use some minimal support code from
+        the XStatic base package, if you like.
+        
+        You can find more info about the xstatic packaging way in the package `XStatic`.
 
 %package python
 Summary: python components for the XStatic-tv4 package.
@@ -42,7 +41,7 @@ python components for the XStatic-tv4 package.
 Summary: python3 components for the XStatic-tv4 package.
 Group: Default
 Requires: python3-core
-Provides: pypi(XStatic-tv4)
+Provides: pypi(xstatic_tv4)
 
 %description python3
 python3 components for the XStatic-tv4 package.
@@ -57,8 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582849896
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583696304
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
